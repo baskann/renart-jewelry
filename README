@@ -1,9 +1,10 @@
 Renart Jewelry - Product Listing Application
 Full-stack jewelry e-commerce application with real-time gold pricing and dynamic price calculation.
-• Live Demo
+Live Demo
 Application: https://renart-jewelry.vercel.app
-• Features
-• Backend
+Backend API: https://renart-jewelry-production.up.railway.app
+Features
+Backend:
 
 RESTful API with Express.js
 Dynamic pricing formula: Price = (popularityScore + 1) × weight × goldPrice
@@ -11,7 +12,7 @@ Real-time gold price integration from metals.live API
 Advanced filtering system for price and popularity
 Smart caching system (10-minute intervals)
 
-• Frontend
+Frontend:
 
 Responsive carousel with touch/swipe support
 Interactive color picker with 3 gold options (Yellow, White, Rose)
@@ -20,7 +21,7 @@ Real-time filtering interface
 Mobile-first responsive design
 Typography compliance with PDF specifications
 
-• Technology Stack
+Technology Stack
 Backend:
 
 Node.js + Express.js
@@ -39,7 +40,7 @@ External Services:
 
 metals.live API for real-time gold pricing
 
-• API Endpoints
+API Endpoints
 
 GET /api/products - List all products with dynamic pricing
 GET /api/products?minPrice=100&maxPrice=500 - Filter by price range
@@ -47,8 +48,8 @@ GET /api/products?minPopularity=3&maxPopularity=5 - Filter by rating
 GET /api/products/:id - Get single product details
 GET /api/health - API health check
 
-• Design Specifications
-• Typography (PDF Compliant)
+Design Specifications
+Typography (PDF Compliant):
 
 Main Title: Avenir Book 45px
 Product Names: Avenir Book 14px
@@ -56,26 +57,26 @@ Product Prices: Avenir Book 14px
 Color Labels: Avenir Book 12px
 Star Ratings: Avenir Book 12px
 
-• Color Palette
+Color Palette:
 
 Yellow Gold: #E6CA97
 White Gold: #D9D9D9
 Rose Gold: #E1A4A9
 
-• Responsive Design
+Responsive Design
 
 Desktop (1024px+): 4 products per view
 Tablet (640-1024px): 2 products per view
 Mobile (<640px): 1 product per view
 Touch/swipe navigation on all devices
 
-• Installation & Development
-• Prerequisites
+Installation & Development
+Prerequisites:
 
 Node.js 16+
 Git
 
-• Setup
+Setup:
 bash# Clone repository
 git clone https://github.com/baskann/renart-jewelry.git
 cd renart-jewelry
@@ -83,29 +84,29 @@ cd renart-jewelry
 # Backend setup
 cd backend
 npm install
-npm run dev  # Runs on http://localhost:5000
+npm run dev
 
 # Frontend setup (new terminal)
 cd frontend
 npm install
-npm start    # Runs on http://localhost:3000
-• Deployment
+npm start
+Deployment
+
 Backend: Railway.app
 Frontend: Vercel.com
 Environment Variable: REACT_APP_API_URL=https://renart-jewelry-production.up.railway.app
-• Project Structure
+
+Project Structure
 renart-jewelry/
 ├── backend/
-│   ├── server.js              # Main API server
-│   └── package.json           # Backend dependencies
+│   ├── server.js
+│   └── package.json
 ├── frontend/
-│   ├── src/
-│   │   └── App.js             # Main React component
-│   ├── public/
-│   │   └── index.html         # HTML template
-│   └── package.json           # Frontend dependencies
-└── README.md                  # Project documentation
-• Performance Features
+│   ├── src/App.js
+│   ├── public/index.html
+│   └── package.json
+└── README.md
+Performance Features
 
 10-minute gold price caching for optimal API usage
 Lazy image loading for faster page loads
@@ -113,13 +114,13 @@ Responsive image optimization
 Efficient carousel sliding with CSS transforms
 Error handling with fallback pricing
 
-• Browser Support
+Browser Support
 
 Chrome 90+
 Firefox 88+
 Safari 14+
 Edge 90+
-Mobile browsers (iOS Safari, Android Chrome)
+Mobile browsers
 
 
 Developer: Bora Başkan
