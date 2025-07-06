@@ -43,7 +43,7 @@ const ProductListing = () => {
     return 'http://localhost:5000';
   };
 
-  const API_URL = getApiUrl();
+  const API_URL = 'https://renart-jewelry-production.up.railway.app';
 
   // Fetch products on component mount
   useEffect(() => {
