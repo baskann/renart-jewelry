@@ -1,28 +1,28 @@
-Renart Jewelry - Product Listing Application
+# Renart Jewelry - Product Listing Application
+
 Full-stack jewelry e-commerce application with real-time gold pricing.
-Live Demo
 
-Application: https://renart-jewelry.vercel.app
-Backend API: https://renart-jewelry-production.up.railway.app
+## Live Demo
+- **Application:** https://renart-jewelry.vercel.app
+- **Backend API:** https://renart-jewelry-production.up.railway.app
 
-Features
+## Features
+- RESTful API with dynamic pricing formula
+- Real-time gold price integration
+- Responsive carousel with touch/swipe support
+- Color picker (Yellow, White, Rose Gold)
+- 5-star rating system
+- Price and popularity filtering
+- Mobile responsive design
 
-RESTful API with dynamic pricing formula
-Real-time gold price integration
-Responsive carousel with touch/swipe support
-Color picker (Yellow, White, Rose Gold)
-5-star rating system
-Price and popularity filtering
-Mobile responsive design
+## Tech Stack
+- **Backend:** Node.js, Express.js, Railway
+- **Frontend:** React, Tailwind CSS, Vercel
+- **API:** metals.live for gold pricing
 
-Tech Stack
-
-Backend: Node.js, Express.js, Railway
-Frontend: React, Tailwind CSS, Vercel
-API: metals.live for gold pricing
-
-Installation
-bash# Clone repository
+## Installation
+```bash
+# Clone repository
 git clone https://github.com/baskann/renart-jewelry.git
 
 # Backend
