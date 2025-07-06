@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Renart Jewelry - Luxury Engagement Rings Collection with Real-time Gold Pricing" />
+    <meta name="keywords" content="jewelry, engagement rings, gold, luxury, renart" />
+    <meta name="author" content="Renart Development Team" />
+    
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Tailwind configuration for custom colors and fonts
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'avenir': ['Avenir', 'system-ui', 'sans-serif'],
+              'montserrat': ['Montserrat', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              'yellow-gold': '#E6CA97',
+              'white-gold': '#D9D9D9',
+              'rose-gold': '#E1A4A9',
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Custom CSS for enhanced styling -->
+    <style>
+      /* Import fallback fonts */
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+      
+      /* Base body styling with font hierarchy */
+      body {
+        font-family: 'Avenir', 'Inter', system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      
+      /* Custom scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #c1c1c1;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #a8a8a8;
+      }
+      
+      /* Smooth fade-in animation for components */
+      .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+    
+    <title>Renart Jewelry - Product Listing</title>
+  </head>
+  <body>
+    <!-- Fallback for users with disabled JavaScript -->
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- React app root element -->
+    <div id="root"></div>
+    
+    <!-- Optional: Analytics or tracking scripts can be added here -->
+    <!-- <script>
+      console.log('Renart Jewelry App Loaded Successfully');
+    </script> -->
+  </body>
+</html>
