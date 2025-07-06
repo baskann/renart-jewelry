@@ -1,83 +1,83 @@
-# Renart Jewelry - Product Listing Application
-
+Renart Jewelry - Product Listing Application
 Full-stack jewelry e-commerce application with real-time gold pricing and dynamic price calculation.
+Live Demo
+Application: https://renart-jewelry.vercel.app
+Backend API: https://renart-jewelry-production.up.railway.app
+Features
+Backend
 
-## Live Demo
+RESTful API with Express.js
+Dynamic pricing formula: Price = (popularityScore + 1) × weight × goldPrice
+Real-time gold price integration from metals.live API
+Advanced filtering system for price and popularity
+Smart caching system (10-minute intervals)
 
-**Application:** https://renart-jewelry.vercel.app  
-**Backend API:** https://renart-jewelry-production.up.railway.app
+Frontend
 
-## Features
+Responsive carousel with touch/swipe support
+Interactive color picker with 3 gold options (Yellow, White, Rose)
+5-star rating system converted from popularity scores
+Real-time filtering interface
+Mobile-first responsive design
+Typography compliance with PDF specifications
 
-### Backend
-- RESTful API with Express.js
-- Dynamic pricing formula: Price = (popularityScore + 1) × weight × goldPrice
-- Real-time gold price integration from metals.live API
-- Advanced filtering system for price and popularity
-- Smart caching system (10-minute intervals)
+Technology Stack
+Backend:
 
-### Frontend
-- Responsive carousel with touch/swipe support
-- Interactive color picker with 3 gold options (Yellow, White, Rose)
-- 5-star rating system converted from popularity scores
-- Real-time filtering interface
-- Mobile-first responsive design
-- Typography compliance with PDF specifications
+Node.js + Express.js
+Axios for external API calls
+CORS middleware
+Railway deployment
 
-## Technology Stack
+Frontend:
 
-**Backend:**
-- Node.js + Express.js
-- Axios for external API calls
-- CORS middleware
-- Railway deployment
+React 18 with hooks
+Tailwind CSS for styling
+Lucide React for icons
+Vercel deployment
 
-**Frontend:**
-- React 18 with hooks
-- Tailwind CSS for styling
-- Lucide React for icons
-- Vercel deployment
+External Services:
 
-**External Services:**
-- metals.live API for real-time gold pricing
+metals.live API for real-time gold pricing
 
-## API Endpoints
+API Endpoints
 
-- GET /api/products - List all products with dynamic pricing
-- GET /api/products?minPrice=100&maxPrice=500 - Filter by price range
-- GET /api/products?minPopularity=3&maxPopularity=5 - Filter by rating
-- GET /api/products/:id - Get single product details
-- GET /api/health - API health check
+GET /api/products - List all products with dynamic pricing
+GET /api/products?minPrice=100&maxPrice=500 - Filter by price range
+GET /api/products?minPopularity=3&maxPopularity=5 - Filter by rating
+GET /api/products/:id - Get single product details
+GET /api/health - API health check
 
-## Design Specifications
+Design Specifications
+Typography (PDF Compliant)
 
-### Typography (PDF Compliant)
-- Main Title: Avenir Book 45px
-- Product Names: Avenir Book 14px
-- Product Prices: Avenir Book 14px
-- Color Labels: Avenir Book 12px
-- Star Ratings: Avenir Book 12px
+Main Title: Avenir Book 45px
+Product Names: Avenir Book 14px
+Product Prices: Avenir Book 14px
+Color Labels: Avenir Book 12px
+Star Ratings: Avenir Book 12px
 
-### Color Palette
-- Yellow Gold: #E6CA97
-- White Gold: #D9D9D9
-- Rose Gold: #E1A4A9
+Color Palette
 
-## Responsive Design
-- Desktop (1024px+): 4 products per view
-- Tablet (640-1024px): 2 products per view
-- Mobile (<640px): 1 product per view
-- Touch/swipe navigation on all devices
+Yellow Gold: #E6CA97
+White Gold: #D9D9D9
+Rose Gold: #E1A4A9
 
-## Installation & Development
+Responsive Design
 
-### Prerequisites
-- Node.js 16+
-- Git
+Desktop (1024px+): 4 products per view
+Tablet (640-1024px): 2 products per view
+Mobile (<640px): 1 product per view
+Touch/swipe navigation on all devices
 
-### Setup
-```bash
-# Clone repository
+Installation & Development
+Prerequisites
+
+Node.js 16+
+Git
+
+Setup
+bash# Clone repository
 git clone https://github.com/baskann/renart-jewelry.git
 cd renart-jewelry
 
